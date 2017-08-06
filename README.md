@@ -27,3 +27,18 @@ Run the following command
 mkdir ~/Calculator
 git clone https://github.com/thenerdygeek/Calculator.git ~/Calculator && cd ~/Calculator
 ```
+
+*Lastly import this calculator project from your Android studio / eclipse or any other IDE for Android App Development* 
+
+---
+### For Windows OS
+
+Make sure git is installed in your computer if not then download it from [here](https://git-scm.com/download/win)
+```
+C:
+mkdir Calculator 
+git clone https://github.com/thenerdygeek/Calculator.git ~/Calculator && cd Calculator
+```
+This will create a directory in your `C` drive, if you want to create in another drive just replace `C` in `C:` with your preffered drive
+
+*Lastly import this calculator project from your Android studio / eclipse or any other IDE for Android App Development*
