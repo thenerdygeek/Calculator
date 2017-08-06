@@ -17,3 +17,13 @@ A Calculator
 
 * Scientific Calculation
 * More Animations
+
+## Download
+
+### For Linux OS
+Run the following command 
+
+```
+mkdir ~/Calculator
+git clone https://github.com/thenerdygeek/Calculator.git ~/Calculator && cd ~/Calculator
+```
