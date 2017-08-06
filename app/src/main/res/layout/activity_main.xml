@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.livecalculator.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <include
+            layout="@layout/expressions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/delete_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_blue_A200"
+            android:visibility="invisible"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="hello"/>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/seven"
+                    style="@style/CategoryStyle"
+                    android:text="7" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/four"
+                    style="@style/CategoryStyle"
+                    android:text="4" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/one"
+                    style="@style/CategoryStyle"
+                    android:text="1" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/dot"
+                    style="@style/CategoryStyle"
+                    android:text="."
+                    android:onClick="dot"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="hello"/>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/eight"
+                    style="@style/CategoryStyle"
+                    android:text="8" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/five"
+                    style="@style/CategoryStyle"
+                    android:text="5" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/two"
+                    style="@style/CategoryStyle"
+                    android:text="2" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/zero"
+                    style="@style/CategoryStyle"
+                    android:text="0" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="hello"/>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/nine"
+                    style="@style/CategoryStyle"
+                    android:text="9" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/six"
+                    style="@style/CategoryStyle"
+                    android:text="6" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/three"
+                    style="@style/CategoryStyle"
+                    android:text="3" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_1000">
+
+                <TextView
+                    android:id="@+id/delete"
+                    style="@style/CategoryStyle"
+                    android:text="C" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" -->
+            <!--android:text="hello"/>-->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_900">
+
+                <TextView
+                    android:id="@+id/multiply"
+                    style="@style/CategoryStyle"
+                    android:onClick="multiply"
+                    android:text="*" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_900">
+
+                <TextView
+                    android:id="@+id/divide"
+                    style="@style/CategoryStyle"
+                    android:onClick="divide"
+                    android:text="/" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_900">
+
+                <TextView
+                    android:id="@+id/add"
+                    style="@style/CategoryStyle"
+                    android:onClick="add"
+                    android:text="+" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_900">
+
+                <TextView
+                    android:id="@+id/subtract"
+                    style="@style/CategoryStyle"
+                    android:onClick="subtract"
+                    android:text="-" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/md_grey_900">
+
+                <TextView
+                    android:id="@+id/equals"
+                    style="@style/CategoryStyle"
+                    android:onClick="equals"
+                    android:text="=" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
